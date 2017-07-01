@@ -1,0 +1,53 @@
+{
+  "products":  [
+      {
+        "id": 1,
+        "name": "Microwave oven",
+        "category": "Electronics",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "3000",
+        "unit": "RS."
+      },
+      {
+        "id": 2,
+        "name": "Television",
+        "category": "Electronics",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "10599",
+        "unit": "RS."
+      },
+      {
+        "id": 3,
+        "name": "Vacuum Cleaner",
+        "category": "Electronics",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "8000",
+        "unit": "RS."
+      }
+  ,{
+        "id": 4,
+        "name": "Table",
+        "category": "Furniture",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "3500",
+        "unit": "RS."
+      },
+      {
+        "id": 5,
+        "name": "Chair",
+        "category": "Furniture",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "2400",
+        "unit": "RS."
+      },
+      {
+        "id": 6,
+        "name": "Almirah",
+        "category": "Furniture",
+        "cover": "assets/product-images/microwave.jpg",
+        "price": "12500",
+        "unit": "RS."
+      }
+    ]
+
+}

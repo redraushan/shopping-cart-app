@@ -1,0 +1,19 @@
+.app-header {
+  width: 100%;
+  padding: 12px;
+  background: #22226d;
+}
+.app-title {
+  font-size: 18px;
+  padding: 15px;
+  color: white;
+}
+
+.cart-icon {
+  float: right;
+  color: white;
+  padding-right: 15px;
+}
+.app-body {
+  padding: 15px;
+}

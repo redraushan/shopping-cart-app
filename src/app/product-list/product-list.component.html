@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-md-12">
+    <h4>Electronics</h4>
+    <div class="card">
+      <div class="card-body card-padding">
+        <div routerLinkActive="" [routerLink]="'product/'+product.id" class="product-body" *ngFor="let product of productList.electronics">
+          <img src="{{product.cover}}" class="product-cover" alt="">
+          <div class="product-title">{{product.name}}</div>
+          <span class="product-price-unit">{{product.unit}}</span><span class="product-price">{{product.price}}</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="row">
+  <div class="col-md-12">
+    <h4>Furniture</h4>
+    <div class="card">
+      <div class="card-body card-padding">
+        <div routerLinkActive="" [routerLink]="'product/'+product.id" class="product-body" *ngFor="let product of productList.furniture">
+          <img src="{{product.cover}}" class="product-cover" alt="">
+          <div class="product-title">{{product.name}}</div>
+          <span class="product-price-unit">{{product.unit}}</span><span class="product-price">{{product.price}}</span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
