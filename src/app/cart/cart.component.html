@@ -1,3 +1,32 @@
-<div class="cart-details">
-  cart details
+<h3>Shopping Cart</h3>
+<div class="cart-details" id="shopping-cart">
+
+   <div class="table-responsive">
+    <table class="table">
+      <thead>
+      <tr>
+        <th></th>
+        <th>Product Name</th>
+        <th>Category</th>
+        <th>Quantity</th>
+        <th>Unit Price</th>
+        <th>Subtotal</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of items | async" >
+        <td>
+          <img class="product-image img-responsive" src="{{item.cover}}" alt="">
+        </td>
+        <td class=""><a class="product-name" href="" [routerLink]="'/product/'+item.productKey">{{item.name}}</a></td>
+        <td>{{item.category}}</td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price}} {{item.unit}}</td>
+        <td>{{item.price * item.quantity}} {{item.unit}}</td>
+        <td><button (click)="removeItem(item.$key)" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-remove"></i></button></td>
+      </tr>
+      </tbody>
+    </table>
+</div>
 </div>

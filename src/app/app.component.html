@@ -1,23 +1,18 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="app-header">
-  <span class="app-title">
-    Shopping App
-  </span>
+  <img [routerLink]="['']"  class="app-logo" src="../assets/logo.png" alt="">
+  <span [routerLink]="['']" class="app-title">Shopping App</span>
+
     <a class="cart-icon"  href="" [routerLink]="['mycart']">
       <i class="glyphicon glyphicon-shopping-cart"></i>
+      <span *ngIf="cartItemCount" class="cart-item-count">{{cartItemCount}}</span>
+
     </a>
+
 </div>
 
-<div class="app-body">
-  <div class="row">
-    <div class="col-md-12">
-      <app-product-list></app-product-list>
-
-    </div>
-
-  </div>
+<div class="container">
+  <router-outlet></router-outlet>
 </div>
-
 
 
 

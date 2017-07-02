@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
-
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import {environment} from '../environments/environment';
 const appRoutes: Routes = [
   { path: 'product/:id', component: ProductDetailsComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: AppComponent },
+  { path: '', component: ProductListComponent },
   { path: 'mycart', component: CartComponent }
 ];
 
@@ -24,7 +25,9 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
